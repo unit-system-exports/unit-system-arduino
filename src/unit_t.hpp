@@ -1,8 +1,39 @@
 #pragma once
 
-#include <cstddef>
-#include <cmath>
-#include <algorithm>
+#if __has_include(<cstddef>)
+    #include <cstddef>
+#else
+    #ifdef abs
+        #undef abs
+    #endif
+    
+    namespace std{
+        using size_t = unsigned int;
+        
+        template <typename T>
+        T abs(T var){
+            return var > 0 ? var : -var;
+        }
+    }
+#endif
+
+#if __has_include(<algorithm>)
+    #include <algorithm>
+#else
+    #ifdef max
+        #undef max
+    #endif
+    
+    namespace std{
+        
+        template <typename T>
+        T max(T v1, T v2){
+            return v1 > v2 ? v1 : v2;
+        }
+    }
+#endif
+
+
 
 namespace sakurajin{
     namespace unit_system{
