@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UNIT_SYSTEM_UNITS_HEADER
+#define UNIT_SYSTEM_UNITS_HEADER
 
 // This header simply includes all units from the unit-system library
 
@@ -43,4 +44,5 @@ namespace sakurajin{
         }
     }
 }
+#endif
 #endif
