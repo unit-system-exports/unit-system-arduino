@@ -108,10 +108,20 @@ jobs:
             pipx install platformio
       - name: compile example
         run: PLATFORMIO_CI_SRC="examples/${{ matrix.examples.name }}/${{ matrix.examples.name }}.ino" pio ci --lib="." -b ${{ matrix.boards.name }}
+  
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: arduino/arduino-lint-action@v1
+        with:
+          library-manager: update
+          compliance: strict
+  
   releases:
     name: "Release"
     runs-on: "ubuntu-22.04"
-    needs: [arduino_matix, pio_matrix]
+    needs: [arduino_matix, pio_matrix, lint]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
