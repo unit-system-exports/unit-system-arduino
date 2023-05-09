@@ -4,17 +4,22 @@
 using namespace sakurajin::unit_system;
 using namespace sakurajin::unit_system::literals;
 
-const int LED = 25;
+#ifdef LED_BUILTIN
+const int OUTPUT_LED = LED_BUILTIN;
+#else
+const int OUTPUT_LED = 16;
+#endif
+
 time_si delta_t = 500_ms;
 
 void setup() {
-    pinMode(LED, OUTPUT);
+    pinMode(OUTPUT_LED, OUTPUT);
 }
 
 void loop() {
-    digitalWrite(LED, HIGH);
+    digitalWrite(OUTPUT_LED, HIGH);
     delay(delta_t.value);
 
-    digitalWrite(LED, LOW);
+    digitalWrite(OUTPUT_LED, LOW);
     delay(delta_t.value);
 }
