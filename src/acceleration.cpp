@@ -13,22 +13,22 @@ acceleration::acceleration(long double val, long double mult, long double offset
 
 
 
-acceleration literals::operator "" _G(long double len){
-    return acceleration{len,9.81, 0.0};
-}
-
-acceleration literals::operator "" _G(unsigned long long int len){
-    return acceleration{static_cast<long double>(len),9.81, 0.0};
-}
-
-
-
 acceleration literals::operator "" _mps2(long double len){
     return acceleration{len,1.0, 0.0};
 }
 
 acceleration literals::operator "" _mps2(unsigned long long int len){
     return acceleration{static_cast<long double>(len),1.0, 0.0};
+}
+
+
+
+acceleration literals::operator "" _G(long double len){
+    return acceleration{len,9.80665, 0.0};
+}
+
+acceleration literals::operator "" _G(unsigned long long int len){
+    return acceleration{static_cast<long double>(len),9.80665, 0.0};
 }
 
 

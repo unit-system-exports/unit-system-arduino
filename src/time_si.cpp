@@ -73,32 +73,52 @@ time_si literals::operator "" _ms(unsigned long long int len){
 
 
 
-time_si literals::operator "" _ns(long double len){
+time_si literals::operator "" _us(long double len){
     return time_si{len,1e-06, 0.0};
 }
 
-time_si literals::operator "" _ns(unsigned long long int len){
+time_si literals::operator "" _us(unsigned long long int len){
     return time_si{static_cast<long double>(len),1e-06, 0.0};
 }
 
 
 
-time_si literals::operator "" _us(long double len){
+time_si literals::operator "" _ns(long double len){
     return time_si{len,1e-09, 0.0};
 }
 
-time_si literals::operator "" _us(unsigned long long int len){
+time_si literals::operator "" _ns(unsigned long long int len){
     return time_si{static_cast<long double>(len),1e-09, 0.0};
 }
 
 
 
-time_si literals::operator "" _fs(long double len){
+time_si literals::operator "" _ps(long double len){
     return time_si{len,1e-12, 0.0};
 }
 
-time_si literals::operator "" _fs(unsigned long long int len){
+time_si literals::operator "" _ps(unsigned long long int len){
     return time_si{static_cast<long double>(len),1e-12, 0.0};
+}
+
+
+
+time_si literals::operator "" _fs(long double len){
+    return time_si{len,1e-15, 0.0};
+}
+
+time_si literals::operator "" _fs(unsigned long long int len){
+    return time_si{static_cast<long double>(len),1e-15, 0.0};
+}
+
+
+
+time_si literals::operator "" _as(long double len){
+    return time_si{len,1e-18, 0.0};
+}
+
+time_si literals::operator "" _as(unsigned long long int len){
+    return time_si{static_cast<long double>(len),1e-18, 0.0};
 }
 
 

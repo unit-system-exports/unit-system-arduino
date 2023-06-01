@@ -21,6 +21,30 @@ namespace sakurajin{
         inline namespace literals{
             
             
+             electric_current operator "" _A(long double val);
+             electric_current operator "" _A(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _PA(long double val);
+             electric_current operator "" _PA(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _TA(long double val);
+             electric_current operator "" _TA(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _GA(long double val);
+             electric_current operator "" _GA(unsigned long long int val);
+            
+            
+            
+            
              electric_current operator "" _MA(long double val);
              electric_current operator "" _MA(unsigned long long int val);
             
@@ -29,12 +53,6 @@ namespace sakurajin{
             
              electric_current operator "" _kA(long double val);
              electric_current operator "" _kA(unsigned long long int val);
-            
-            
-            
-            
-             electric_current operator "" _A(long double val);
-             electric_current operator "" _A(unsigned long long int val);
             
             
             
@@ -53,6 +71,24 @@ namespace sakurajin{
             
              electric_current operator "" _nA(long double val);
              electric_current operator "" _nA(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _pA(long double val);
+             electric_current operator "" _pA(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _fA(long double val);
+             electric_current operator "" _fA(unsigned long long int val);
+            
+            
+            
+            
+             electric_current operator "" _aA(long double val);
+             electric_current operator "" _aA(unsigned long long int val);
             
             
             

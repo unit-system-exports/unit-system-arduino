@@ -13,6 +13,46 @@ electric_current::electric_current(long double val, long double mult, long doubl
 
 
 
+electric_current literals::operator "" _A(long double len){
+    return electric_current{len,1.0, 0.0};
+}
+
+electric_current literals::operator "" _A(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1.0, 0.0};
+}
+
+
+
+electric_current literals::operator "" _PA(long double len){
+    return electric_current{len,1000000000000000.0, 0.0};
+}
+
+electric_current literals::operator "" _PA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1000000000000000.0, 0.0};
+}
+
+
+
+electric_current literals::operator "" _TA(long double len){
+    return electric_current{len,1000000000000.0, 0.0};
+}
+
+electric_current literals::operator "" _TA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1000000000000.0, 0.0};
+}
+
+
+
+electric_current literals::operator "" _GA(long double len){
+    return electric_current{len,1000000000.0, 0.0};
+}
+
+electric_current literals::operator "" _GA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1000000000.0, 0.0};
+}
+
+
+
 electric_current literals::operator "" _MA(long double len){
     return electric_current{len,1000000.0, 0.0};
 }
@@ -29,16 +69,6 @@ electric_current literals::operator "" _kA(long double len){
 
 electric_current literals::operator "" _kA(unsigned long long int len){
     return electric_current{static_cast<long double>(len),1000.0, 0.0};
-}
-
-
-
-electric_current literals::operator "" _A(long double len){
-    return electric_current{len,1.0, 0.0};
-}
-
-electric_current literals::operator "" _A(unsigned long long int len){
-    return electric_current{static_cast<long double>(len),1.0, 0.0};
 }
 
 
@@ -69,6 +99,36 @@ electric_current literals::operator "" _nA(long double len){
 
 electric_current literals::operator "" _nA(unsigned long long int len){
     return electric_current{static_cast<long double>(len),1e-09, 0.0};
+}
+
+
+
+electric_current literals::operator "" _pA(long double len){
+    return electric_current{len,1e-12, 0.0};
+}
+
+electric_current literals::operator "" _pA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1e-12, 0.0};
+}
+
+
+
+electric_current literals::operator "" _fA(long double len){
+    return electric_current{len,1e-15, 0.0};
+}
+
+electric_current literals::operator "" _fA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1e-15, 0.0};
+}
+
+
+
+electric_current literals::operator "" _aA(long double len){
+    return electric_current{len,1e-18, 0.0};
+}
+
+electric_current literals::operator "" _aA(unsigned long long int len){
+    return electric_current{static_cast<long double>(len),1e-18, 0.0};
 }
 
 

@@ -57,20 +57,32 @@ namespace sakurajin{
             
             
             
-             time_si operator "" _ns(long double val);
-             time_si operator "" _ns(unsigned long long int val);
-            
-            
-            
-            
              time_si operator "" _us(long double val);
              time_si operator "" _us(unsigned long long int val);
             
             
             
             
+             time_si operator "" _ns(long double val);
+             time_si operator "" _ns(unsigned long long int val);
+            
+            
+            
+            
+             time_si operator "" _ps(long double val);
+             time_si operator "" _ps(unsigned long long int val);
+            
+            
+            
+            
              time_si operator "" _fs(long double val);
              time_si operator "" _fs(unsigned long long int val);
+            
+            
+            
+            
+             time_si operator "" _as(long double val);
+             time_si operator "" _as(unsigned long long int val);
             
             
             

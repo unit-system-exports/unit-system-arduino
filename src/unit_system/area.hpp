@@ -21,20 +21,44 @@ namespace sakurajin{
         inline namespace literals{
             
             
-             area operator "" _km2(long double val);
-             area operator "" _km2(unsigned long long int val);
-            
-            
-            
-            
              area operator "" _m2(long double val);
              area operator "" _m2(unsigned long long int val);
             
             
             
             
+             area operator "" _are(long double val);
+             area operator "" _are(unsigned long long int val);
+            
+            
+            
+            
+             area operator "" _hectare(long double val);
+             area operator "" _hectare(unsigned long long int val);
+            
+            
+            
+            
+             area operator "" _km2(long double val);
+             area operator "" _km2(unsigned long long int val);
+            
+            
+            
+            
              area operator "" _mm2(long double val);
              area operator "" _mm2(unsigned long long int val);
+            
+            
+            
+            
+             area operator "" _um2(long double val);
+             area operator "" _um2(unsigned long long int val);
+            
+            
+            
+            
+             area operator "" _nm2(long double val);
+             area operator "" _nm2(unsigned long long int val);
             
             
             

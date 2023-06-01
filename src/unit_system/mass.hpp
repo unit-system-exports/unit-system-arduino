@@ -50,6 +50,30 @@ namespace sakurajin{
             
             
             
+            
+             mass operator "" _ng(long double val);
+             mass operator "" _ng(unsigned long long int val);
+            
+            
+            
+            
+             mass operator "" _pg(long double val);
+             mass operator "" _pg(unsigned long long int val);
+            
+            
+            
+            
+             mass operator "" _fg(long double val);
+             mass operator "" _fg(unsigned long long int val);
+            
+            
+            
+            
+             mass operator "" _ag(long double val);
+             mass operator "" _ag(unsigned long long int val);
+            
+            
+            
         }
         
     }
