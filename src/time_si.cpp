@@ -1,6 +1,4 @@
-
 #include "unit_system/time_si.hpp"
-
 
 using namespace sakurajin::unit_system;
 

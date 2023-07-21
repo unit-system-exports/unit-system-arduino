@@ -1,7 +1,5 @@
 #pragma once
 
-
-
 namespace sakurajin{
     namespace unit_system{
         namespace constants{

@@ -1,6 +1,4 @@
-
 #include "unit_system/combinations.hpp"
-
 
 
 sakurajin::unit_system::length sakurajin::unit_system::operator*(const sakurajin::unit_system::speed& v1, const sakurajin::unit_system::time_si& v2){

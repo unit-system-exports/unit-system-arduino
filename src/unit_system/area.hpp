@@ -1,10 +1,6 @@
 #pragma once
 
-
 #include "unit_system/unit_t.hpp"
-
-
-
 
 namespace sakurajin{
     namespace unit_system{
@@ -16,8 +12,8 @@ namespace sakurajin{
             area(long double val, long double mult);
             area(long double val, long double mult, long double offset);
         };
-        
 
+        
         inline namespace literals{
             
             

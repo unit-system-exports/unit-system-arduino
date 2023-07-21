@@ -1,6 +1,4 @@
-
 #include "unit_system/energy.hpp"
-
 
 using namespace sakurajin::unit_system;
 

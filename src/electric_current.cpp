@@ -1,6 +1,4 @@
-
 #include "unit_system/electric_current.hpp"
-
 
 using namespace sakurajin::unit_system;
 

@@ -1,11 +1,27 @@
 #ifndef UNIT_SYSTEM_UNIT_TYPE_TEMPLATE
 #define UNIT_SYSTEM_UNIT_TYPE_TEMPLATE
 
+#include "Arduino.h"
 
+#define UNIT_SYSTEM_SIZE_T unsigned long long
+#define UNIT_SYSTEM_ABS(x) ((x) < -(x) ? -(x) : (x))
 
-
-#include "unit_system/std_implements.hpp"
-
+const long double UNIT_SYSTEM_FEMTO = 1e-15;
+const long double UNIT_SYSTEM_PICO = 1e-12;
+const long double UNIT_SYSTEM_NANO = 1e-9;
+const long double UNIT_SYSTEM_MICRO = 1e-6;
+const long double UNIT_SYSTEM_MILLI = 1e-3;
+const long double UNIT_SYSTEM_CENTI = 1e-2;
+const long double UNIT_SYSTEM_DECI = 1e-1;
+const long double UNIT_SYSTEM_DECA = 1e1;
+const long double UNIT_SYSTEM_HECTO = 1e2;
+const long double UNIT_SYSTEM_KILO = 1e3;
+const long double UNIT_SYSTEM_MEGA = 1e6;
+const long double UNIT_SYSTEM_GIGA = 1e9;
+const long double UNIT_SYSTEM_TERA = 1e12;
+const long double UNIT_SYSTEM_PETA = 1e15;
+const long double UNIT_SYSTEM_EXA = 1e18;
+const long double UNIT_SYSTEM_ZETTA = 1e21;
 
 namespace sakurajin{
     namespace unit_system{
@@ -37,7 +53,7 @@ namespace sakurajin{
         //   8 for energy (J) instead of 322011
         //   801 for Power (W) instead of 3220111
         template <UNIT_SYSTEM_SIZE_T identifier>
-        class  unit_t{
+        class unit_t{
         public:
             const long double multiplier;
             long double value = 0;
@@ -86,14 +102,14 @@ namespace sakurajin{
         //changes multiplier and offset
         //This is needed primarily for temperatures
         template <UNIT_SYSTEM_SIZE_T identifier>
-         unit_t<identifier> unit_cast(const unit_t<identifier>& unit, long double new_multiplier = 1, long double new_offset = 0){
+        unit_t<identifier> unit_cast(const unit_t<identifier>& unit, long double new_multiplier = 1, long double new_offset = 0){
             auto valBase0 = (unit.value + unit.offset) * unit.multiplier;
             unit_t<identifier> retval{valBase0/new_multiplier-new_offset, new_multiplier, new_offset};
             return retval;
         }
 
         template <UNIT_SYSTEM_SIZE_T identifier>
-         unit_t<identifier> clamp(const unit_t<identifier>& unit, const unit_t<identifier>& lower, const unit_t<identifier>& upper){
+        unit_t<identifier> clamp(const unit_t<identifier>& unit, const unit_t<identifier>& lower, const unit_t<identifier>& upper){
 
             auto _lower = unit_cast(lower, unit.multiplier, unit.offset);
             auto _upper = unit_cast(upper, unit.multiplier, unit.offset);

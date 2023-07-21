@@ -1,6 +1,4 @@
-
 #include "unit_system/temperature.hpp"
-
 
 using namespace sakurajin::unit_system;
 

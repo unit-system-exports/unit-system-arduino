@@ -1,6 +1,4 @@
-
 #include "unit_system/acceleration.hpp"
-
 
 using namespace sakurajin::unit_system;
 

@@ -1,6 +1,4 @@
-
 #include "unit_system/speed.hpp"
-
 
 using namespace sakurajin::unit_system;
 

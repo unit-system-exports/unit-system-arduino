@@ -1,10 +1,6 @@
 #pragma once
 
-
 #include "unit_system/units.hpp"
-
-
-
 
 namespace sakurajin{
     namespace unit_system{
