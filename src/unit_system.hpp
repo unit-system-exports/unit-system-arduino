@@ -202,8 +202,7 @@ namespace sakurajin {
         };
 
 
-        area square(const length& unit);
-
+        area   square(const length& unit);
         length unit_cast(const length& unit, long double new_multiplier = 1, long double new_offset = 0);
         length clamp(const length& unit, const length& lower, const length& upper);
 
@@ -1141,7 +1140,6 @@ namespace sakurajin {
 
             length sqrt() const;
         };
-
 
         length sqrt(const area& unit);
 
