@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::electric_current::electric_current()
     : electric_current{0.0} {}
@@ -72,6 +71,7 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::electric_curren
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::electric_current::operator<(const sakurajin::unit_system::electric_current& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -100,6 +100,7 @@ bool sakurajin::unit_system::electric_current::operator==(const sakurajin::unit_
 bool sakurajin::unit_system::electric_current::operator!=(const sakurajin::unit_system::electric_current& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::electric_current::operator*=(long double scalar) {
@@ -144,6 +145,7 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::clamp(const sak
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::electric_current{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

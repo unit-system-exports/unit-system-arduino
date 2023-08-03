@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::area::area()
     : area{0.0} {}
@@ -69,6 +68,7 @@ sakurajin::unit_system::area sakurajin::unit_system::area::convert_copy(long dou
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::area::operator<(const sakurajin::unit_system::area& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -97,6 +97,7 @@ bool sakurajin::unit_system::area::operator==(const sakurajin::unit_system::area
 bool sakurajin::unit_system::area::operator!=(const sakurajin::unit_system::area& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::area::operator*=(long double scalar) {
@@ -137,6 +138,7 @@ sakurajin::unit_system::length sakurajin::unit_system::area::sqrt() const {
 
 // external functions
 
+
 sakurajin::unit_system::length sakurajin::unit_system::sqrt(const area& unit) {
     return unit.sqrt();
 }
@@ -156,6 +158,7 @@ sakurajin::unit_system::area sakurajin::unit_system::clamp(const sakurajin::unit
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::area{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

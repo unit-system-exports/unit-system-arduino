@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::acceleration::acceleration()
     : acceleration{0.0} {}
@@ -72,6 +71,7 @@ sakurajin::unit_system::acceleration sakurajin::unit_system::acceleration::conve
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::acceleration::operator<(const sakurajin::unit_system::acceleration& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -100,6 +100,7 @@ bool sakurajin::unit_system::acceleration::operator==(const sakurajin::unit_syst
 bool sakurajin::unit_system::acceleration::operator!=(const sakurajin::unit_system::acceleration& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::acceleration::operator*=(long double scalar) {
@@ -156,6 +157,7 @@ sakurajin::unit_system::acceleration sakurajin::unit_system::clamp(const sakuraj
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::acceleration{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

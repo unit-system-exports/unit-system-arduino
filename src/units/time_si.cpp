@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::time_si::time_si()
     : time_si{0.0} {}
@@ -69,6 +68,7 @@ sakurajin::unit_system::time_si sakurajin::unit_system::time_si::convert_copy(lo
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::time_si::operator<(const sakurajin::unit_system::time_si& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -97,6 +97,7 @@ bool sakurajin::unit_system::time_si::operator==(const sakurajin::unit_system::t
 bool sakurajin::unit_system::time_si::operator!=(const sakurajin::unit_system::time_si& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::time_si::operator*=(long double scalar) {
@@ -165,6 +166,7 @@ sakurajin::unit_system::time_si sakurajin::unit_system::clamp(const sakurajin::u
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::time_si{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

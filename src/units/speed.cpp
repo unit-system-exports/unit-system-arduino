@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::speed::speed()
     : speed{0.0} {}
@@ -69,6 +68,7 @@ sakurajin::unit_system::speed sakurajin::unit_system::speed::convert_copy(long d
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::speed::operator<(const sakurajin::unit_system::speed& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -97,6 +97,7 @@ bool sakurajin::unit_system::speed::operator==(const sakurajin::unit_system::spe
 bool sakurajin::unit_system::speed::operator!=(const sakurajin::unit_system::speed& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::speed::operator*=(long double scalar) {
@@ -178,6 +179,7 @@ sakurajin::unit_system::speed sakurajin::unit_system::clamp(const sakurajin::uni
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::speed{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

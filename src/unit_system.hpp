@@ -1,5 +1,6 @@
 #pragma once
 
+
 #define UNIT_SYSTEM_ABS(x) ((x) < -(x) ? -(x) : (x))
 
 const long double UNIT_SYSTEM_FEMTO = 1e-15;
@@ -18,6 +19,7 @@ const long double UNIT_SYSTEM_TERA  = 1e12;
 const long double UNIT_SYSTEM_PETA  = 1e15;
 const long double UNIT_SYSTEM_EXA   = 1e18;
 const long double UNIT_SYSTEM_ZETTA = 1e21;
+
 
 namespace sakurajin {
     namespace unit_system {
@@ -53,6 +55,7 @@ namespace sakurajin {
             time_si(long double v, long double mult);
             time_si(long double v, long double mult, long double off);
 
+
             time_si operator*(long double scalar) const;
             void    operator*=(long double scalar);
 
@@ -75,6 +78,7 @@ namespace sakurajin {
             time_si convert_multiplier(long double new_multiplier = 1) const;
             time_si convert_offset(long double new_offset = 0) const;
             time_si convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const time_si& other) const;
             bool operator>(const time_si& other) const;
@@ -147,6 +151,7 @@ namespace sakurajin {
             length(long double v, long double mult);
             length(long double v, long double mult, long double off);
 
+
             length operator*(long double scalar) const;
             void   operator*=(long double scalar);
 
@@ -170,6 +175,7 @@ namespace sakurajin {
             length convert_offset(long double new_offset = 0) const;
             length convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+
             bool operator<(const length& other) const;
             bool operator>(const length& other) const;
             bool operator<=(const length& other) const;
@@ -185,12 +191,11 @@ namespace sakurajin {
             area   operator*(const length& other) const;
             energy operator*(const force& other) const;
 
-
             area square() const;
         };
 
+        area square(const length& unit);
 
-        area   square(const length& unit);
         length unit_cast(const length& unit, long double new_multiplier = 1, long double new_offset = 0);
         length clamp(const length& unit, const length& lower, const length& upper);
 
@@ -244,6 +249,7 @@ namespace sakurajin {
             mass(long double v, long double mult);
             mass(long double v, long double mult, long double off);
 
+
             mass operator*(long double scalar) const;
             void operator*=(long double scalar);
 
@@ -266,6 +272,7 @@ namespace sakurajin {
             mass convert_multiplier(long double new_multiplier = 1) const;
             mass convert_offset(long double new_offset = 0) const;
             mass convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const mass& other) const;
             bool operator>(const mass& other) const;
@@ -330,6 +337,7 @@ namespace sakurajin {
             temperature(long double v, long double mult);
             temperature(long double v, long double mult, long double off);
 
+
             temperature operator*(long double scalar) const;
             void        operator*=(long double scalar);
 
@@ -352,6 +360,7 @@ namespace sakurajin {
             temperature convert_multiplier(long double new_multiplier = 1) const;
             temperature convert_offset(long double new_offset = 0) const;
             temperature convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const temperature& other) const;
             bool operator>(const temperature& other) const;
@@ -391,6 +400,7 @@ namespace sakurajin {
             amount(long double v, long double mult);
             amount(long double v, long double mult, long double off);
 
+
             amount operator*(long double scalar) const;
             void   operator*=(long double scalar);
 
@@ -413,6 +423,7 @@ namespace sakurajin {
             amount convert_multiplier(long double new_multiplier = 1) const;
             amount convert_offset(long double new_offset = 0) const;
             amount convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const amount& other) const;
             bool operator>(const amount& other) const;
@@ -452,6 +463,7 @@ namespace sakurajin {
             electric_current(long double v, long double mult);
             electric_current(long double v, long double mult, long double off);
 
+
             electric_current operator*(long double scalar) const;
             void             operator*=(long double scalar);
 
@@ -474,6 +486,7 @@ namespace sakurajin {
             electric_current convert_multiplier(long double new_multiplier = 1) const;
             electric_current convert_offset(long double new_offset = 0) const;
             electric_current convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const electric_current& other) const;
             bool operator>(const electric_current& other) const;
@@ -543,6 +556,7 @@ namespace sakurajin {
             luminous_intensity(long double v, long double mult);
             luminous_intensity(long double v, long double mult, long double off);
 
+
             luminous_intensity operator*(long double scalar) const;
             void               operator*=(long double scalar);
 
@@ -565,6 +579,7 @@ namespace sakurajin {
             luminous_intensity convert_multiplier(long double new_multiplier = 1) const;
             luminous_intensity convert_offset(long double new_offset = 0) const;
             luminous_intensity convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const luminous_intensity& other) const;
             bool operator>(const luminous_intensity& other) const;
@@ -601,6 +616,7 @@ namespace sakurajin {
             energy(long double v, long double mult);
             energy(long double v, long double mult, long double off);
 
+
             energy operator*(long double scalar) const;
             void   operator*=(long double scalar);
 
@@ -623,6 +639,7 @@ namespace sakurajin {
             energy convert_multiplier(long double new_multiplier = 1) const;
             energy convert_offset(long double new_offset = 0) const;
             energy convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const energy& other) const;
             bool operator>(const energy& other) const;
@@ -763,6 +780,7 @@ namespace sakurajin {
             power(long double v, long double mult);
             power(long double v, long double mult, long double off);
 
+
             power operator*(long double scalar) const;
             void  operator*=(long double scalar);
 
@@ -785,6 +803,7 @@ namespace sakurajin {
             power convert_multiplier(long double new_multiplier = 1) const;
             power convert_offset(long double new_offset = 0) const;
             power convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const power& other) const;
             bool operator>(const power& other) const;
@@ -861,6 +880,7 @@ namespace sakurajin {
             speed(long double v, long double mult);
             speed(long double v, long double mult, long double off);
 
+
             speed operator*(long double scalar) const;
             void  operator*=(long double scalar);
 
@@ -883,6 +903,7 @@ namespace sakurajin {
             speed convert_multiplier(long double new_multiplier = 1) const;
             speed convert_offset(long double new_offset = 0) const;
             speed convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const speed& other) const;
             bool operator>(const speed& other) const;
@@ -932,6 +953,7 @@ namespace sakurajin {
             acceleration(long double v, long double mult);
             acceleration(long double v, long double mult, long double off);
 
+
             acceleration operator*(long double scalar) const;
             void         operator*=(long double scalar);
 
@@ -954,6 +976,7 @@ namespace sakurajin {
             acceleration convert_multiplier(long double new_multiplier = 1) const;
             acceleration convert_offset(long double new_offset = 0) const;
             acceleration convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const acceleration& other) const;
             bool operator>(const acceleration& other) const;
@@ -997,6 +1020,7 @@ namespace sakurajin {
             area(long double v, long double mult);
             area(long double v, long double mult, long double off);
 
+
             area operator*(long double scalar) const;
             void operator*=(long double scalar);
 
@@ -1020,6 +1044,7 @@ namespace sakurajin {
             area convert_offset(long double new_offset = 0) const;
             area convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+
             bool operator<(const area& other) const;
             bool operator>(const area& other) const;
             bool operator<=(const area& other) const;
@@ -1034,10 +1059,10 @@ namespace sakurajin {
             length sqrt() const;
         };
 
-        length sqrt(const area& unit);
 
-        area unit_cast(const area& unit, long double new_multiplier = 1, long double new_offset = 0);
-        area clamp(const area& unit, const area& lower, const area& upper);
+        length sqrt(const area& unit);
+        area   unit_cast(const area& unit, long double new_multiplier = 1, long double new_offset = 0);
+        area   clamp(const area& unit, const area& lower, const area& upper);
 
 
         inline namespace literals {
@@ -1080,6 +1105,7 @@ namespace sakurajin {
             force(long double v, long double mult);
             force(long double v, long double mult, long double off);
 
+
             force operator*(long double scalar) const;
             void  operator*=(long double scalar);
 
@@ -1102,6 +1128,7 @@ namespace sakurajin {
             force convert_multiplier(long double new_multiplier = 1) const;
             force convert_offset(long double new_offset = 0) const;
             force convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const force& other) const;
             bool operator>(const force& other) const;
@@ -1180,6 +1207,7 @@ namespace sakurajin {
             momentum(long double v, long double mult);
             momentum(long double v, long double mult, long double off);
 
+
             momentum operator*(long double scalar) const;
             void     operator*=(long double scalar);
 
@@ -1202,6 +1230,7 @@ namespace sakurajin {
             momentum convert_multiplier(long double new_multiplier = 1) const;
             momentum convert_offset(long double new_offset = 0) const;
             momentum convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
 
             bool operator<(const momentum& other) const;
             bool operator>(const momentum& other) const;
@@ -1235,6 +1264,7 @@ namespace sakurajin {
 
     } // namespace unit_system
 } // namespace sakurajin
+
 
 // add all constants
 namespace sakurajin {

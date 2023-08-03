@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::energy::energy()
     : energy{0.0} {}
@@ -69,6 +68,7 @@ sakurajin::unit_system::energy sakurajin::unit_system::energy::convert_copy(long
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::energy::operator<(const sakurajin::unit_system::energy& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -97,6 +97,7 @@ bool sakurajin::unit_system::energy::operator==(const sakurajin::unit_system::en
 bool sakurajin::unit_system::energy::operator!=(const sakurajin::unit_system::energy& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::energy::operator*=(long double scalar) {
@@ -177,6 +178,7 @@ sakurajin::unit_system::energy sakurajin::unit_system::clamp(const sakurajin::un
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::energy{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

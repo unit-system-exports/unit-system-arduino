@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::momentum::momentum()
     : momentum{0.0} {}
@@ -69,6 +68,7 @@ sakurajin::unit_system::momentum sakurajin::unit_system::momentum::convert_copy(
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::momentum::operator<(const sakurajin::unit_system::momentum& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -97,6 +97,7 @@ bool sakurajin::unit_system::momentum::operator==(const sakurajin::unit_system::
 bool sakurajin::unit_system::momentum::operator!=(const sakurajin::unit_system::momentum& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::momentum::operator*=(long double scalar) {
@@ -172,6 +173,7 @@ sakurajin::unit_system::momentum sakurajin::unit_system::clamp(const sakurajin::
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::momentum{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 

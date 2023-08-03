@@ -1,6 +1,5 @@
-#include "unit_system.hpp"
-
 #include "Arduino.h"
+#include "unit_system.hpp"
 
 sakurajin::unit_system::luminous_intensity::luminous_intensity()
     : luminous_intensity{0.0} {}
@@ -73,6 +72,7 @@ sakurajin::unit_system::luminous_intensity sakurajin::unit_system::luminous_inte
 }
 
 // comparison operators
+
 bool sakurajin::unit_system::luminous_intensity::operator<(const sakurajin::unit_system::luminous_intensity& other) const {
     const auto retval = sakurajin::unit_system::unit_cast(other, multiplier, offset);
     return value < retval.value;
@@ -101,6 +101,7 @@ bool sakurajin::unit_system::luminous_intensity::operator==(const sakurajin::uni
 bool sakurajin::unit_system::luminous_intensity::operator!=(const sakurajin::unit_system::luminous_intensity& other) const {
     return !(*this == other);
 }
+
 
 // non const member functions
 void sakurajin::unit_system::luminous_intensity::operator*=(long double scalar) {
@@ -145,6 +146,7 @@ sakurajin::unit_system::luminous_intensity sakurajin::unit_system::clamp(const s
     auto val = unit.value > _lower.value ? (unit.value < _upper.value ? unit.value : _upper.value) : _lower.value;
     return sakurajin::unit_system::luminous_intensity{val, unit.multiplier, unit.offset};
 }
+
 
 // literals
 
