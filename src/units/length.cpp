@@ -188,7 +188,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _m(u
     return sakurajin::unit_system::length{static_cast<long double>(len), 1.0, 0.0};
 }
 
-
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _km(long double len) {
     return sakurajin::unit_system::length{len, 1000.0, 0.0};
 }
@@ -196,7 +195,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _km(
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _km(unsigned long long int len) {
     return sakurajin::unit_system::length{static_cast<long double>(len), 1000.0, 0.0};
 }
-
 
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _dm(long double len) {
     return sakurajin::unit_system::length{len, 0.1, 0.0};
@@ -206,7 +204,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _dm(
     return sakurajin::unit_system::length{static_cast<long double>(len), 0.1, 0.0};
 }
 
-
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _cm(long double len) {
     return sakurajin::unit_system::length{len, 0.01, 0.0};
 }
@@ -214,7 +211,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _cm(
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _cm(unsigned long long int len) {
     return sakurajin::unit_system::length{static_cast<long double>(len), 0.01, 0.0};
 }
-
 
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _mm(long double len) {
     return sakurajin::unit_system::length{len, 0.001, 0.0};
@@ -224,7 +220,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _mm(
     return sakurajin::unit_system::length{static_cast<long double>(len), 0.001, 0.0};
 }
 
-
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _um(long double len) {
     return sakurajin::unit_system::length{len, 1e-06, 0.0};
 }
@@ -232,7 +227,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _um(
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _um(unsigned long long int len) {
     return sakurajin::unit_system::length{static_cast<long double>(len), 1e-06, 0.0};
 }
-
 
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _nm(long double len) {
     return sakurajin::unit_system::length{len, 1e-09, 0.0};
@@ -242,7 +236,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _nm(
     return sakurajin::unit_system::length{static_cast<long double>(len), 1e-09, 0.0};
 }
 
-
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _pm(long double len) {
     return sakurajin::unit_system::length{len, 1e-12, 0.0};
 }
@@ -251,7 +244,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _pm(
     return sakurajin::unit_system::length{static_cast<long double>(len), 1e-12, 0.0};
 }
 
-
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _fm(long double len) {
     return sakurajin::unit_system::length{len, 1e-15, 0.0};
 }
@@ -259,7 +251,6 @@ sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _fm(
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _fm(unsigned long long int len) {
     return sakurajin::unit_system::length{static_cast<long double>(len), 1e-15, 0.0};
 }
-
 
 sakurajin::unit_system::length sakurajin::unit_system::literals::operator"" _am(long double len) {
     return sakurajin::unit_system::length{len, 1e-18, 0.0};

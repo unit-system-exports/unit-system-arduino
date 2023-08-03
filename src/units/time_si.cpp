@@ -177,7 +177,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _a(
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 31536000000.0, 0.0};
 }
 
-
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _d(long double len) {
     return sakurajin::unit_system::time_si{len, 86400000.0, 0.0};
 }
@@ -185,7 +184,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _d(
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _d(unsigned long long int len) {
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 86400000.0, 0.0};
 }
-
 
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _h(long double len) {
     return sakurajin::unit_system::time_si{len, 3600.0, 0.0};
@@ -195,7 +193,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _h(
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 3600.0, 0.0};
 }
 
-
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _minute(long double len) {
     return sakurajin::unit_system::time_si{len, 60.0, 0.0};
 }
@@ -203,7 +200,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _mi
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _minute(unsigned long long int len) {
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 60.0, 0.0};
 }
-
 
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _s(long double len) {
     return sakurajin::unit_system::time_si{len, 1.0, 0.0};
@@ -213,7 +209,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _s(
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 1.0, 0.0};
 }
 
-
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ms(long double len) {
     return sakurajin::unit_system::time_si{len, 0.001, 0.0};
 }
@@ -221,7 +216,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ms
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ms(unsigned long long int len) {
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 0.001, 0.0};
 }
-
 
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _us(long double len) {
     return sakurajin::unit_system::time_si{len, 1e-06, 0.0};
@@ -231,7 +225,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _us
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 1e-06, 0.0};
 }
 
-
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ns(long double len) {
     return sakurajin::unit_system::time_si{len, 1e-09, 0.0};
 }
@@ -239,7 +232,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ns
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ns(unsigned long long int len) {
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 1e-09, 0.0};
 }
-
 
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ps(long double len) {
     return sakurajin::unit_system::time_si{len, 1e-12, 0.0};
@@ -249,7 +241,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _ps
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 1e-12, 0.0};
 }
 
-
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _fs(long double len) {
     return sakurajin::unit_system::time_si{len, 1e-15, 0.0};
 }
@@ -257,7 +248,6 @@ sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _fs
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _fs(unsigned long long int len) {
     return sakurajin::unit_system::time_si{static_cast<long double>(len), 1e-15, 0.0};
 }
-
 
 sakurajin::unit_system::time_si sakurajin::unit_system::literals::operator"" _as(long double len) {
     return sakurajin::unit_system::time_si{len, 1e-18, 0.0};

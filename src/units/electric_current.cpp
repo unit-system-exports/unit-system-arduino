@@ -156,7 +156,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1.0, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _PA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1000000000000000.0, 0.0};
 }
@@ -164,7 +163,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _PA(unsigned long long int len) {
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1000000000000000.0, 0.0};
 }
-
 
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _TA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1000000000000.0, 0.0};
@@ -174,7 +172,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1000000000000.0, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _GA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1000000000.0, 0.0};
 }
@@ -182,7 +179,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _GA(unsigned long long int len) {
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1000000000.0, 0.0};
 }
-
 
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _MA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1000000.0, 0.0};
@@ -192,7 +188,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1000000.0, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _kA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1000.0, 0.0};
 }
@@ -200,7 +195,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _kA(unsigned long long int len) {
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1000.0, 0.0};
 }
-
 
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _mA(long double len) {
     return sakurajin::unit_system::electric_current{len, 0.001, 0.0};
@@ -210,7 +204,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 0.001, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _uA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1e-06, 0.0};
 }
@@ -218,7 +211,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _uA(unsigned long long int len) {
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1e-06, 0.0};
 }
-
 
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _nA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1e-09, 0.0};
@@ -228,7 +220,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1e-09, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _pA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1e-12, 0.0};
 }
@@ -237,7 +228,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1e-12, 0.0};
 }
 
-
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _fA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1e-15, 0.0};
 }
@@ -245,7 +235,6 @@ sakurajin::unit_system::electric_current sakurajin::unit_system::literals::opera
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _fA(unsigned long long int len) {
     return sakurajin::unit_system::electric_current{static_cast<long double>(len), 1e-15, 0.0};
 }
-
 
 sakurajin::unit_system::electric_current sakurajin::unit_system::literals::operator"" _aA(long double len) {
     return sakurajin::unit_system::electric_current{len, 1e-18, 0.0};

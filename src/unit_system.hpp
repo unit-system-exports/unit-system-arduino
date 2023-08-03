@@ -97,50 +97,38 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             time_si operator"" _a(long double val);
             time_si operator"" _a(unsigned long long int val);
-
 
             time_si operator"" _d(long double val);
             time_si operator"" _d(unsigned long long int val);
 
-
             time_si operator"" _h(long double val);
             time_si operator"" _h(unsigned long long int val);
-
 
             time_si operator"" _minute(long double val);
             time_si operator"" _minute(unsigned long long int val);
 
-
             time_si operator"" _s(long double val);
             time_si operator"" _s(unsigned long long int val);
-
 
             time_si operator"" _ms(long double val);
             time_si operator"" _ms(unsigned long long int val);
 
-
             time_si operator"" _us(long double val);
             time_si operator"" _us(unsigned long long int val);
-
 
             time_si operator"" _ns(long double val);
             time_si operator"" _ns(unsigned long long int val);
 
-
             time_si operator"" _ps(long double val);
             time_si operator"" _ps(unsigned long long int val);
-
 
             time_si operator"" _fs(long double val);
             time_si operator"" _fs(unsigned long long int val);
 
-
             time_si operator"" _as(long double val);
             time_si operator"" _as(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -209,46 +197,35 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             length operator"" _m(long double val);
             length operator"" _m(unsigned long long int val);
-
 
             length operator"" _km(long double val);
             length operator"" _km(unsigned long long int val);
 
-
             length operator"" _dm(long double val);
             length operator"" _dm(unsigned long long int val);
-
 
             length operator"" _cm(long double val);
             length operator"" _cm(unsigned long long int val);
 
-
             length operator"" _mm(long double val);
             length operator"" _mm(unsigned long long int val);
-
 
             length operator"" _um(long double val);
             length operator"" _um(unsigned long long int val);
 
-
             length operator"" _nm(long double val);
             length operator"" _nm(unsigned long long int val);
-
 
             length operator"" _pm(long double val);
             length operator"" _pm(unsigned long long int val);
 
-
             length operator"" _fm(long double val);
             length operator"" _fm(unsigned long long int val);
 
-
             length operator"" _am(long double val);
             length operator"" _am(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -309,42 +286,32 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             mass operator"" _t(long double val);
             mass operator"" _t(unsigned long long int val);
-
 
             mass operator"" _kg(long double val);
             mass operator"" _kg(unsigned long long int val);
 
-
             mass operator"" _g(long double val);
             mass operator"" _g(unsigned long long int val);
-
 
             mass operator"" _mg(long double val);
             mass operator"" _mg(unsigned long long int val);
 
-
             mass operator"" _ug(long double val);
             mass operator"" _ug(unsigned long long int val);
-
 
             mass operator"" _ng(long double val);
             mass operator"" _ng(unsigned long long int val);
 
-
             mass operator"" _pg(long double val);
             mass operator"" _pg(unsigned long long int val);
-
 
             mass operator"" _fg(long double val);
             mass operator"" _fg(unsigned long long int val);
 
-
             mass operator"" _ag(long double val);
             mass operator"" _ag(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -401,14 +368,11 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             temperature operator"" _K(long double val);
             temperature operator"" _K(unsigned long long int val);
 
-
             temperature operator"" _Celsius(long double val);
             temperature operator"" _Celsius(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -465,14 +429,11 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             amount operator"" _mol(long double val);
             amount operator"" _mol(unsigned long long int val);
 
-
             amount operator"" _things(long double val);
             amount operator"" _things(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -529,54 +490,41 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             electric_current operator"" _A(long double val);
             electric_current operator"" _A(unsigned long long int val);
-
 
             electric_current operator"" _PA(long double val);
             electric_current operator"" _PA(unsigned long long int val);
 
-
             electric_current operator"" _TA(long double val);
             electric_current operator"" _TA(unsigned long long int val);
-
 
             electric_current operator"" _GA(long double val);
             electric_current operator"" _GA(unsigned long long int val);
 
-
             electric_current operator"" _MA(long double val);
             electric_current operator"" _MA(unsigned long long int val);
-
 
             electric_current operator"" _kA(long double val);
             electric_current operator"" _kA(unsigned long long int val);
 
-
             electric_current operator"" _mA(long double val);
             electric_current operator"" _mA(unsigned long long int val);
-
 
             electric_current operator"" _uA(long double val);
             electric_current operator"" _uA(unsigned long long int val);
 
-
             electric_current operator"" _nA(long double val);
             electric_current operator"" _nA(unsigned long long int val);
-
 
             electric_current operator"" _pA(long double val);
             electric_current operator"" _pA(unsigned long long int val);
 
-
             electric_current operator"" _fA(long double val);
             electric_current operator"" _fA(unsigned long long int val);
 
-
             electric_current operator"" _aA(long double val);
             electric_current operator"" _aA(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -633,10 +581,8 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             luminous_intensity operator"" _cd(long double val);
             luminous_intensity operator"" _cd(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -701,138 +647,104 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             energy operator"" _J(long double val);
             energy operator"" _J(unsigned long long int val);
-
 
             energy operator"" _Nm(long double val);
             energy operator"" _Nm(unsigned long long int val);
 
-
             energy operator"" _eV(long double val);
             energy operator"" _eV(unsigned long long int val);
-
 
             energy operator"" _Wh(long double val);
             energy operator"" _Wh(unsigned long long int val);
 
-
             energy operator"" _Ws(long double val);
             energy operator"" _Ws(unsigned long long int val);
-
 
             energy operator"" _PJ(long double val);
             energy operator"" _PJ(unsigned long long int val);
 
-
             energy operator"" _TJ(long double val);
             energy operator"" _TJ(unsigned long long int val);
-
 
             energy operator"" _GJ(long double val);
             energy operator"" _GJ(unsigned long long int val);
 
-
             energy operator"" _MJ(long double val);
             energy operator"" _MJ(unsigned long long int val);
-
 
             energy operator"" _kJ(long double val);
             energy operator"" _kJ(unsigned long long int val);
 
-
             energy operator"" _mJ(long double val);
             energy operator"" _mJ(unsigned long long int val);
-
 
             energy operator"" _uJ(long double val);
             energy operator"" _uJ(unsigned long long int val);
 
-
             energy operator"" _nJ(long double val);
             energy operator"" _nJ(unsigned long long int val);
-
 
             energy operator"" _pJ(long double val);
             energy operator"" _pJ(unsigned long long int val);
 
-
             energy operator"" _fJ(long double val);
             energy operator"" _fJ(unsigned long long int val);
-
 
             energy operator"" _aJ(long double val);
             energy operator"" _aJ(unsigned long long int val);
 
-
             energy operator"" _GNm(long double val);
             energy operator"" _GNm(unsigned long long int val);
-
 
             energy operator"" _MNm(long double val);
             energy operator"" _MNm(unsigned long long int val);
 
-
             energy operator"" _kNm(long double val);
             energy operator"" _kNm(unsigned long long int val);
-
 
             energy operator"" _mNm(long double val);
             energy operator"" _mNm(unsigned long long int val);
 
-
             energy operator"" _uNm(long double val);
             energy operator"" _uNm(unsigned long long int val);
-
 
             energy operator"" _PeV(long double val);
             energy operator"" _PeV(unsigned long long int val);
 
-
             energy operator"" _TeV(long double val);
             energy operator"" _TeV(unsigned long long int val);
-
 
             energy operator"" _GeV(long double val);
             energy operator"" _GeV(unsigned long long int val);
 
-
             energy operator"" _MeV(long double val);
             energy operator"" _MeV(unsigned long long int val);
-
 
             energy operator"" _keV(long double val);
             energy operator"" _keV(unsigned long long int val);
 
-
             energy operator"" _meV(long double val);
             energy operator"" _meV(unsigned long long int val);
-
 
             energy operator"" _ueV(long double val);
             energy operator"" _ueV(unsigned long long int val);
 
-
             energy operator"" _PWh(long double val);
             energy operator"" _PWh(unsigned long long int val);
-
 
             energy operator"" _TWh(long double val);
             energy operator"" _TWh(unsigned long long int val);
 
-
             energy operator"" _GWh(long double val);
             energy operator"" _GWh(unsigned long long int val);
-
 
             energy operator"" _MWh(long double val);
             energy operator"" _MWh(unsigned long long int val);
 
-
             energy operator"" _kWh(long double val);
             energy operator"" _kWh(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -896,54 +808,41 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             power operator"" _W(long double val);
             power operator"" _W(unsigned long long int val);
-
 
             power operator"" _PW(long double val);
             power operator"" _PW(unsigned long long int val);
 
-
             power operator"" _TW(long double val);
             power operator"" _TW(unsigned long long int val);
-
 
             power operator"" _GW(long double val);
             power operator"" _GW(unsigned long long int val);
 
-
             power operator"" _MW(long double val);
             power operator"" _MW(unsigned long long int val);
-
 
             power operator"" _kW(long double val);
             power operator"" _kW(unsigned long long int val);
 
-
             power operator"" _mW(long double val);
             power operator"" _mW(unsigned long long int val);
-
 
             power operator"" _uW(long double val);
             power operator"" _uW(unsigned long long int val);
 
-
             power operator"" _nW(long double val);
             power operator"" _nW(unsigned long long int val);
-
 
             power operator"" _pW(long double val);
             power operator"" _pW(unsigned long long int val);
 
-
             power operator"" _fW(long double val);
             power operator"" _fW(unsigned long long int val);
 
-
             power operator"" _aW(long double val);
             power operator"" _aW(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -1010,14 +909,11 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             speed operator"" _mps(long double val);
             speed operator"" _mps(unsigned long long int val);
 
-
             speed operator"" _kmph(long double val);
             speed operator"" _kmph(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -1078,14 +974,11 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             acceleration operator"" _mps2(long double val);
             acceleration operator"" _mps2(unsigned long long int val);
 
-
             acceleration operator"" _G(long double val);
             acceleration operator"" _G(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -1149,34 +1042,26 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             area operator"" _m2(long double val);
             area operator"" _m2(unsigned long long int val);
-
 
             area operator"" _are(long double val);
             area operator"" _are(unsigned long long int val);
 
-
             area operator"" _hectare(long double val);
             area operator"" _hectare(unsigned long long int val);
-
 
             area operator"" _km2(long double val);
             area operator"" _km2(unsigned long long int val);
 
-
             area operator"" _mm2(long double val);
             area operator"" _mm2(unsigned long long int val);
-
 
             area operator"" _um2(long double val);
             area operator"" _um2(unsigned long long int val);
 
-
             area operator"" _nm2(long double val);
             area operator"" _nm2(unsigned long long int val);
-
 
         } // namespace literals
 
@@ -1242,54 +1127,41 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             force operator"" _Newton(long double val);
             force operator"" _Newton(unsigned long long int val);
 
+            force operator"" _PN(long double val);
+            force operator"" _PN(unsigned long long int val);
 
-            force operator"" _PNewton(long double val);
-            force operator"" _PNewton(unsigned long long int val);
+            force operator"" _TN(long double val);
+            force operator"" _TN(unsigned long long int val);
 
+            force operator"" _GN(long double val);
+            force operator"" _GN(unsigned long long int val);
 
-            force operator"" _TNewton(long double val);
-            force operator"" _TNewton(unsigned long long int val);
+            force operator"" _MN(long double val);
+            force operator"" _MN(unsigned long long int val);
 
+            force operator"" _kN(long double val);
+            force operator"" _kN(unsigned long long int val);
 
-            force operator"" _GNewton(long double val);
-            force operator"" _GNewton(unsigned long long int val);
+            force operator"" _mN(long double val);
+            force operator"" _mN(unsigned long long int val);
 
+            force operator"" _uN(long double val);
+            force operator"" _uN(unsigned long long int val);
 
-            force operator"" _MNewton(long double val);
-            force operator"" _MNewton(unsigned long long int val);
+            force operator"" _nN(long double val);
+            force operator"" _nN(unsigned long long int val);
 
+            force operator"" _pN(long double val);
+            force operator"" _pN(unsigned long long int val);
 
-            force operator"" _kNewton(long double val);
-            force operator"" _kNewton(unsigned long long int val);
+            force operator"" _fN(long double val);
+            force operator"" _fN(unsigned long long int val);
 
-
-            force operator"" _mNewton(long double val);
-            force operator"" _mNewton(unsigned long long int val);
-
-
-            force operator"" _uNewton(long double val);
-            force operator"" _uNewton(unsigned long long int val);
-
-
-            force operator"" _nNewton(long double val);
-            force operator"" _nNewton(unsigned long long int val);
-
-
-            force operator"" _pNewton(long double val);
-            force operator"" _pNewton(unsigned long long int val);
-
-
-            force operator"" _fNewton(long double val);
-            force operator"" _fNewton(unsigned long long int val);
-
-
-            force operator"" _aNewton(long double val);
-            force operator"" _aNewton(unsigned long long int val);
-
+            force operator"" _aN(long double val);
+            force operator"" _aN(unsigned long long int val);
 
         } // namespace literals
 
@@ -1355,10 +1227,8 @@ namespace sakurajin {
 
         inline namespace literals {
 
-
             momentum operator"" _kgmps(long double val);
             momentum operator"" _kgmps(unsigned long long int val);
-
 
         } // namespace literals
 

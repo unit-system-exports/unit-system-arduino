@@ -153,7 +153,6 @@ sakurajin::unit_system::temperature sakurajin::unit_system::literals::operator""
     return sakurajin::unit_system::temperature{static_cast<long double>(len), 1.0, 0.0};
 }
 
-
 sakurajin::unit_system::temperature sakurajin::unit_system::literals::operator"" _Celsius(long double len) {
     return sakurajin::unit_system::temperature{len, 1.0, 273.15};
 }
