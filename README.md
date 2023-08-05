@@ -1,4 +1,4 @@
-# unit-system embedded
+# unit-system arduino
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/unit-system.svg?)](https://www.ardu-badge.com/unit-system)
 
@@ -53,7 +53,6 @@ using namespace sakurajin::unit_system::literals;
 
 ## Units that are currently supported
 
-* unit_t -> a unit template that is the basis of all the units
 * time_si -> time with seconds as base unit
 * length -> length with meter as base unit
 * mass -> mass with kg as base unit
@@ -70,6 +69,21 @@ using namespace sakurajin::unit_system::literals;
 * power -> power with `kg * m^2 / s^3` (Watts) as base unit
 
 ## Upgrade Instructions
+
+### from version 0.7.x to 0.8.x
+
+Most code should still work.
+
+However, there are two major changes.
+The first one is that there is only one header now.
+All declarations are now in the `unit_system.hpp` header.
+If you only included some parts of the library you have to change that.
+
+The second major change is the removal of the unit_t template class.
+This means all custom types are now broken.
+This is done to simplify the code and make it easier to maintain.
+Now all units have to be created by using the generator script.
+If you want to add a new unit you have to add it to the generator script and run it.
 
 ### from version 0.6.x to 0.7.x
 
