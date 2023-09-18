@@ -79,6 +79,9 @@ namespace sakurajin {
             time_si convert_offset(long double new_offset = 0) const;
             time_si convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            time_si convert_like(const time_si& other) const;
+
 
             bool operator<(const time_si& other) const;
             bool operator>(const time_si& other) const;
@@ -137,6 +140,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        time_si operator*(long double scalar, const time_si& value);
+
+
         class length {
           public:
             const long double multiplier;
@@ -174,6 +180,9 @@ namespace sakurajin {
             length convert_multiplier(long double new_multiplier = 1) const;
             length convert_offset(long double new_offset = 0) const;
             length convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            length convert_like(const length& other) const;
 
 
             bool operator<(const length& other) const;
@@ -235,6 +244,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        length operator*(long double scalar, const length& value);
+
+
         class mass {
           public:
             const long double multiplier;
@@ -272,6 +284,9 @@ namespace sakurajin {
             mass convert_multiplier(long double new_multiplier = 1) const;
             mass convert_offset(long double new_offset = 0) const;
             mass convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            mass convert_like(const mass& other) const;
 
 
             bool operator<(const mass& other) const;
@@ -323,6 +338,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        mass operator*(long double scalar, const mass& value);
+
+
         class temperature {
           public:
             const long double multiplier;
@@ -361,6 +379,9 @@ namespace sakurajin {
             temperature convert_offset(long double new_offset = 0) const;
             temperature convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            temperature convert_like(const temperature& other) const;
+
 
             bool operator<(const temperature& other) const;
             bool operator>(const temperature& other) const;
@@ -384,6 +405,9 @@ namespace sakurajin {
             temperature operator"" _Celsius(unsigned long long int val);
 
         } // namespace literals
+
+
+        temperature operator*(long double scalar, const temperature& value);
 
 
         class amount {
@@ -424,6 +448,9 @@ namespace sakurajin {
             amount convert_offset(long double new_offset = 0) const;
             amount convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            amount convert_like(const amount& other) const;
+
 
             bool operator<(const amount& other) const;
             bool operator>(const amount& other) const;
@@ -447,6 +474,9 @@ namespace sakurajin {
             amount operator"" _things(unsigned long long int val);
 
         } // namespace literals
+
+
+        amount operator*(long double scalar, const amount& value);
 
 
         class electric_current {
@@ -486,6 +516,9 @@ namespace sakurajin {
             electric_current convert_multiplier(long double new_multiplier = 1) const;
             electric_current convert_offset(long double new_offset = 0) const;
             electric_current convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            electric_current convert_like(const electric_current& other) const;
 
 
             bool operator<(const electric_current& other) const;
@@ -542,6 +575,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        electric_current operator*(long double scalar, const electric_current& value);
+
+
         class luminous_intensity {
           public:
             const long double multiplier;
@@ -580,6 +616,9 @@ namespace sakurajin {
             luminous_intensity convert_offset(long double new_offset = 0) const;
             luminous_intensity convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            luminous_intensity convert_like(const luminous_intensity& other) const;
+
 
             bool operator<(const luminous_intensity& other) const;
             bool operator>(const luminous_intensity& other) const;
@@ -600,6 +639,9 @@ namespace sakurajin {
             luminous_intensity operator"" _cd(unsigned long long int val);
 
         } // namespace literals
+
+
+        luminous_intensity operator*(long double scalar, const luminous_intensity& value);
 
 
         class energy {
@@ -639,6 +681,9 @@ namespace sakurajin {
             energy convert_multiplier(long double new_multiplier = 1) const;
             energy convert_offset(long double new_offset = 0) const;
             energy convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            energy convert_like(const energy& other) const;
 
 
             bool operator<(const energy& other) const;
@@ -766,6 +811,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        energy operator*(long double scalar, const energy& value);
+
+
         class power {
           public:
             const long double multiplier;
@@ -803,6 +851,9 @@ namespace sakurajin {
             power convert_multiplier(long double new_multiplier = 1) const;
             power convert_offset(long double new_offset = 0) const;
             power convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            power convert_like(const power& other) const;
 
 
             bool operator<(const power& other) const;
@@ -866,6 +917,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        power operator*(long double scalar, const power& value);
+
+
         class speed {
           public:
             const long double multiplier;
@@ -904,6 +958,9 @@ namespace sakurajin {
             speed convert_offset(long double new_offset = 0) const;
             speed convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            speed convert_like(const speed& other) const;
+
 
             bool operator<(const speed& other) const;
             bool operator>(const speed& other) const;
@@ -937,6 +994,9 @@ namespace sakurajin {
             speed operator"" _kmph(unsigned long long int val);
 
         } // namespace literals
+
+
+        speed operator*(long double scalar, const speed& value);
 
 
         class acceleration {
@@ -977,6 +1037,9 @@ namespace sakurajin {
             acceleration convert_offset(long double new_offset = 0) const;
             acceleration convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            acceleration convert_like(const acceleration& other) const;
+
 
             bool operator<(const acceleration& other) const;
             bool operator>(const acceleration& other) const;
@@ -1004,6 +1067,9 @@ namespace sakurajin {
             acceleration operator"" _G(unsigned long long int val);
 
         } // namespace literals
+
+
+        acceleration operator*(long double scalar, const acceleration& value);
 
 
         class area {
@@ -1043,6 +1109,9 @@ namespace sakurajin {
             area convert_multiplier(long double new_multiplier = 1) const;
             area convert_offset(long double new_offset = 0) const;
             area convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            area convert_like(const area& other) const;
 
 
             bool operator<(const area& other) const;
@@ -1091,6 +1160,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        area operator*(long double scalar, const area& value);
+
+
         class force {
           public:
             const long double multiplier;
@@ -1128,6 +1200,9 @@ namespace sakurajin {
             force convert_multiplier(long double new_multiplier = 1) const;
             force convert_offset(long double new_offset = 0) const;
             force convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
+
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            force convert_like(const force& other) const;
 
 
             bool operator<(const force& other) const;
@@ -1193,6 +1268,9 @@ namespace sakurajin {
         } // namespace literals
 
 
+        force operator*(long double scalar, const force& value);
+
+
         class momentum {
           public:
             const long double multiplier;
@@ -1231,6 +1309,9 @@ namespace sakurajin {
             momentum convert_offset(long double new_offset = 0) const;
             momentum convert_copy(long double new_multiplier = 1, long double new_offset = 0) const;
 
+            // returns a copy of the unit with the same multiplier and offset as the other unit
+            momentum convert_like(const momentum& other) const;
+
 
             bool operator<(const momentum& other) const;
             bool operator>(const momentum& other) const;
@@ -1260,6 +1341,9 @@ namespace sakurajin {
             momentum operator"" _kgmps(unsigned long long int val);
 
         } // namespace literals
+
+
+        momentum operator*(long double scalar, const momentum& value);
 
 
     } // namespace unit_system
