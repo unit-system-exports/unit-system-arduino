@@ -98,7 +98,6 @@ bool sakurajin::unit_system::force::operator!=(const sakurajin::unit_system::for
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::force::operator*=(long double scalar) {
     value *= scalar;

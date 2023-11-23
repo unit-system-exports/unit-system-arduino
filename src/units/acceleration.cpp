@@ -102,7 +102,6 @@ bool sakurajin::unit_system::acceleration::operator!=(const sakurajin::unit_syst
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::acceleration::operator*=(long double scalar) {
     value *= scalar;

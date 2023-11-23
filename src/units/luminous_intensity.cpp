@@ -103,7 +103,6 @@ bool sakurajin::unit_system::luminous_intensity::operator!=(const sakurajin::uni
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::luminous_intensity::operator*=(long double scalar) {
     value *= scalar;

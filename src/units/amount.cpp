@@ -98,7 +98,6 @@ bool sakurajin::unit_system::amount::operator!=(const sakurajin::unit_system::am
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::amount::operator*=(long double scalar) {
     value *= scalar;

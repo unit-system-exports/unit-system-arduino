@@ -102,7 +102,6 @@ bool sakurajin::unit_system::electric_current::operator!=(const sakurajin::unit_
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::electric_current::operator*=(long double scalar) {
     value *= scalar;

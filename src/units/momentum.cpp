@@ -98,7 +98,6 @@ bool sakurajin::unit_system::momentum::operator!=(const sakurajin::unit_system::
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::momentum::operator*=(long double scalar) {
     value *= scalar;

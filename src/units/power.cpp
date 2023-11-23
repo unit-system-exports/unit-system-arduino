@@ -98,7 +98,6 @@ bool sakurajin::unit_system::power::operator!=(const sakurajin::unit_system::pow
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::power::operator*=(long double scalar) {
     value *= scalar;

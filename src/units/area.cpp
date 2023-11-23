@@ -98,7 +98,6 @@ bool sakurajin::unit_system::area::operator!=(const sakurajin::unit_system::area
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::area::operator*=(long double scalar) {
     value *= scalar;

@@ -100,7 +100,6 @@ bool sakurajin::unit_system::temperature::operator!=(const sakurajin::unit_syste
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::temperature::operator*=(long double scalar) {
     value *= scalar;

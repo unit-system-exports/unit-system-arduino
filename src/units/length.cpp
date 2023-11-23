@@ -98,7 +98,6 @@ bool sakurajin::unit_system::length::operator!=(const sakurajin::unit_system::le
     return !(*this == other);
 }
 
-
 // non const member functions
 void sakurajin::unit_system::length::operator*=(long double scalar) {
     value *= scalar;
