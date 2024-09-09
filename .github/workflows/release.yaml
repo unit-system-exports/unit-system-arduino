@@ -49,10 +49,10 @@ jobs:
             
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
             python-version: '3.11'
         
@@ -71,12 +71,12 @@ jobs:
             
       - name: Save memory usage change report as artifact
         if: github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.SKETCHES_REPORTS_PATH }}
           path: ${{ env.SKETCHES_REPORTS_PATH }}
           
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: build-artifact
@@ -101,8 +101,8 @@ jobs:
             - name: simple_time
             - name: advanced_time
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
       - name: setup environment and generate sources
         run: |
             pipx install platformio
@@ -112,7 +112,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: arduino/arduino-lint-action@v1
         with:
           library-manager: update
