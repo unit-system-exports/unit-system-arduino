@@ -18,8 +18,8 @@ void setup() {
 
 void loop() {
     digitalWrite(OUTPUT_LED, HIGH);
-    delay(delta_t.value);
+    delay(delta_t.val());
 
     digitalWrite(OUTPUT_LED, LOW);
-    delay(delta_t.value);
+    delay(delta_t.val());
 }

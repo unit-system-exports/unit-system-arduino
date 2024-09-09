@@ -30,8 +30,8 @@ void loop() {
 /* SI delay function */
 void delay_si(time_si& t){
   if(t <= 16383_us){ /* delayMicroseconds has a limit of 16838us */
-    delayMicroseconds(unit_cast(t, UNIT_SYSTEM_MICRO).value);
+    delayMicroseconds(unit_cast(t, UNIT_SYSTEM_MICRO).val());
   } else {
-    delay(unit_cast(t, UNIT_SYSTEM_MILLI).value);
+    delay(unit_cast(t, UNIT_SYSTEM_MILLI).val());
   }
 }
